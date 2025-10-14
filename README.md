@@ -23,7 +23,7 @@ taille: 96mm x 42mm
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
 <BR>
-> [!TIP]
+[!IMPORTANT]
 > le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
 
 ## Répertoires:
