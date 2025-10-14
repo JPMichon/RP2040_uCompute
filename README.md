@@ -46,7 +46,6 @@ _I2C_SDA = 20 # définition de Data du I2C(0) (GP20) <BR>
 _I2C_SCL = 21 # définition de SCL du I2C(0) (GP21) <BR>
 _Buzzer = 11 # définition du  buzzer (GP11) <BR>
 _NeoPixel = 23 # définition du port NeoPixel (GP23) <BR>
-_NeoPixel_nbr = 8 # nombre de neopixel sur le port <BR>
 _EEPROM_ADDR = 0x50 # adresse du eeprom <BR>
 _Boutons = 26 # définition du port analogue des boutons (GP26) <BR>
 _UART = 0 # UART par defaut <BR>
