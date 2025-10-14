@@ -2,7 +2,7 @@
 Plateforme de développement basé sur un RP2040
 taille: 96mm x 42mm
 <BR>
-<img width="1912" height="958" alt="image" src="https://github.com/user-attachments/assets/fa3b1e6e-6f73-4ed2-96cb-1578d7a95dcd" /><BR>
+<img width="956" height="479" alt="image" src="https://github.com/user-attachments/assets/fa3b1e6e-6f73-4ed2-96cb-1578d7a95dcd" /><BR>
 
 ## Caractéristiques:
 
