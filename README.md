@@ -52,3 +52,9 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 
 ## Rendu 3D
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" />
+
+
+
+
+##Ref:
+https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
