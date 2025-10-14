@@ -24,8 +24,8 @@ taille: 96mm x 42mm
 - Trous de montage 3mm
 <BR>
 [!IMPORTANT] 
- le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.
-<BR>
+ le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
+
 ## Répertoires:
   Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
   Hardware: Schématique, Gerber <BR>
