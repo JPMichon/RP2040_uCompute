@@ -23,6 +23,11 @@ Caractéristique:
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
 
+Répertoires:
+Firmware: Firmware compilé en fonction des différentes configuration du SPI
+Hardware: Schématique, Gerber
+TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées
+
 <img width="696" height="539" alt="image" src="https://github.com/user-attachments/assets/06046386-1f22-4b69-9b31-cdb65ba8142a" />
 
 
