@@ -15,7 +15,7 @@ taille: 96mm x 42mm
 - 3 boutons pour l'interface utilisateur (relié ADC0)
 - SIP pour prototypage (10 IOs).
 - Port USB (USB Mini-B)
-- Fusible PTC
+- Fusible PTC (500ma)
 - Piezo
 - Port MicroSD
 - QSPI flash en boitier SOP8 permettant de choisir la taille (2meg - 16meg)
