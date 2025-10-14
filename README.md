@@ -58,6 +58,7 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 ## Rendu 3D
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" /><BR>
 ## BOM
+Rev 1.2: 
 <img width="1707" height="962" alt="image" src="https://github.com/user-attachments/assets/d4e758f1-466e-432b-9660-30dd6cbc7dc9" /><BR>
 
 ## Révision
