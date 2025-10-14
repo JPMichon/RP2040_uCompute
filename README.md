@@ -1,4 +1,4 @@
-# RP2040_Ucompute
+# RP2040_UCompute
 Plateforme de développement basé sur un RP2040
 taille: 96mm x 42mm
 <BR>
