@@ -30,7 +30,7 @@ taille: 96mm x 42mm
 
 ## Assignation des IOs
 
-```
+```Python
 _MicroSD_Detect = 7 # détection de la présence d'une carte MicroSD (GP7) <BR>
 _MicroSD_Select = 13 # définition de la pin Select du SDCARD (GP13) <BR>
 _W5500_Select = 8 # définition de la pin Select du W5500 (GP8) <BR>
