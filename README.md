@@ -23,8 +23,8 @@ taille: 96mm x 42mm
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
 <BR>
- [!TIP] 
- le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
+> [!TIP]
+> le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
 
 ## Répertoires:
   Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
