@@ -22,7 +22,10 @@ taille: 96mm x 42mm
 - DEL connecté au port standard GP25
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
-
+<BR>
+[!IMPORTANT] 
+ le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.
+<BR>
 ## Répertoires:
   Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
   Hardware: Schématique, Gerber <BR>
