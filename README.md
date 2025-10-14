@@ -56,5 +56,5 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 
 
 
-## Reférences:
+## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
