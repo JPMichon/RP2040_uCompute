@@ -63,3 +63,4 @@ Rev 1.1: Release candidat. <BR>
 Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR><BR>
 ## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
+https://github.com/Wiznet/RP2040-HAT-MicroPython/tree/main/examples
