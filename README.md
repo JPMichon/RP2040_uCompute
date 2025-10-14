@@ -29,6 +29,8 @@ taille: 96mm x 42mm
   TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées <BR>
 
 ## Assignation des IOs
+
+```
 _MicroSD_Detect = 7 # détection de la présence d'une carte MicroSD (GP7) <BR>
 _MicroSD_Select = 13 # définition de la pin Select du SDCARD (GP13) <BR>
 _W5500_Select = 8 # définition de la pin Select du W5500 (GP8) <BR>
@@ -51,7 +53,7 @@ _Boutons = 26 # définition du port analogue des boutons (GP26) <BR>
 _UART = 0 # UART par defaut <BR>
 _TX_PIN = 0 # TX Pin (GP0) <BR>
 _RX_PIN = 1 # TX Pin (GP1) <BR>
-
+```
 
 ## Rendu 3D
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" /><BR>
