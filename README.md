@@ -22,8 +22,8 @@ Caractéristique:
 - DEL connecté au port standard GP25
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
-<BR>
+
 <img width="696" height="539" alt="image" src="https://github.com/user-attachments/assets/06046386-1f22-4b69-9b31-cdb65ba8142a" />
 
-<BR> 
+
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" />
