@@ -64,3 +64,4 @@ Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et
 ## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
 https://github.com/Wiznet/RP2040-HAT-MicroPython/tree/main/examples
+https://docs.micropython.org/en/latest/rp2/quickref.html
