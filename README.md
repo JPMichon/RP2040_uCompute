@@ -1,11 +1,8 @@
 # RP2040_Ucompute
 Plateforme de développement basé sur un RP2040
-
-Projet d'utilisation de création d'un PI Pico sur stéroïde.
-L'objectif est de créer une platine de développement IoT à faible coût et versatile.
 taille: 96mm x 42mm
 
-## Caractéristique:
+## Caractéristiques:
 
 - RP2040 
 - LCD 1.3" 240x240 IPS ST7789
@@ -23,7 +20,7 @@ taille: 96mm x 42mm
 - support pour un module Ethernet W5500
 - Trous de montage 3mm
 
-## Répertoires: <BR>
+## Répertoires:
   Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
   Hardware: Schématique, Gerber <BR>
   TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées <BR>
