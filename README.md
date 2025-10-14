@@ -28,7 +28,7 @@ taille: 96mm x 42mm
   Hardware: Schématique, Gerber <BR>
   TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées <BR>
 
-## Utilisation des pins
+## Assignation des IOs
 <img width="696" height="539" alt="image" src="https://github.com/user-attachments/assets/06046386-1f22-4b69-9b31-cdb65ba8142a" />
 
 ## Rendu 3D
