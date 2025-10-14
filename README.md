@@ -57,7 +57,7 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" /><BR>
 
 ## Révision
-Rev 1.1: premiere officielle <BR>
-Rev 1.2: Release candidat. ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR><BR>
+Rev 1.1: Release candidat. <BR>
+Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR><BR>
 ## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
