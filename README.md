@@ -24,9 +24,9 @@ Caractéristique:
 - Trous de montage 3mm
 
 Répertoires: <BR>
-Firmware: Firmware compilé en fonction des différentes configuration du SPI
-Hardware: Schématique, Gerber
-TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées
+Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
+Hardware: Schématique, Gerber <BR>
+TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées <BR>
 
 <img width="696" height="539" alt="image" src="https://github.com/user-attachments/assets/06046386-1f22-4b69-9b31-cdb65ba8142a" />
 
