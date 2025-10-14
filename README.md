@@ -43,8 +43,10 @@ Caractéristique:
 - _NeoPixel = 23 # définition du port NeoPixel (GP23)
 - _NeoPixel_nbr = 8 # nombre de neopixel sur le port
 - _EEPROM_ADDR = 0x50 # adresse du eeprom
-_Boutons = 26 # définition du port analogue des boutons (GP26)
-_UART = 0 # UART par defaut
-_TX_PIN = 0 # TX Pin (GP0)
-_RX_PIN = 1 # TX Pin (GP1)
+- _Boutons = 26 # définition du port analogue des boutons (GP26)
+- _UART = 0 # UART par defaut
+- _TX_PIN = 0 # TX Pin (GP0)
+- _RX_PIN = 1 # TX Pin (GP1)
+
+ <BR> 
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" />
