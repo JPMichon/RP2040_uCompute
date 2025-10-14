@@ -13,7 +13,7 @@ taille: 96mm x 42mm
 - Bornier pour néopixel
 - 1 Connecteur JST pour des modules I2C
 - 3 boutons pour l'interface utilisateur (relié ADC0)
-- SIP pour prototypage (10 IOs).
+- SIP pour prototypage (8 IOs).
 - Port USB (USB Mini-B)
 - Fusible PTC (500ma)
 - Piezo
