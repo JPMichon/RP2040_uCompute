@@ -59,14 +59,19 @@ _RX_PIN = 1 # TX Pin (GP1) <BR>
 ```
 
 ## Rendu 3D
+Rev 1.2:<BR>
 <img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" /><BR>
+Rev 1.3:<BR>
+<img width="2052" height="878" alt="image" src="https://github.com/user-attachments/assets/714fb4e0-fde6-49c3-9d60-bca783d2fd09" /><BR>
+
 ## BOM
 Rev 1.2: 
 <img width="1707" height="962" alt="image" src="https://github.com/user-attachments/assets/d4e758f1-466e-432b-9660-30dd6cbc7dc9" /><BR>
 
 ## Révision
 Rev 1.1: Release candidat. <BR>
-Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR><BR>
+Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR>
+Rev 1.3: Remplacer le port USB par un USB-C. Ajouter un emplacement pour un LCD alternatif SSD1306.<BR><BR>
 ## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
 https://github.com/Wiznet/RP2040-HAT-MicroPython/tree/main/examples
