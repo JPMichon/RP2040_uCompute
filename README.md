@@ -71,7 +71,7 @@ Rev 1.2:
 ## Révision
 Rev 1.1: Release candidat. <BR>
 Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR>
-Rev 1.3: Remplacer le port USB par un USB-C. Ajouter un emplacement pour un LCD alternatif SSD1306. Ajout de pin sur le peigne de prototypage pour le rencontre compatible au Ucompute2<BR><BR>
+Rev 1.3: Remplacer le port USB par un USB-C. Ajouter un emplacement pour un LCD alternatif SSD1306. Ajout de pin sur le peigne de prototypage pour le rencontre compatible au uCompute2.<BR><BR>
 ## Références:
 https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
 https://github.com/Wiznet/RP2040-HAT-MicroPython/tree/main/examples
