@@ -19,9 +19,11 @@ CONFIG = {
         "BG": st7789.BLACK,
         "DIAL": st7789.WHITE,
         "HOUR": st7789.WHITE,
+        "DateBox": 0x45b0, #STEELBLUE
         "MIN": 0x7BEF, # Gris clair
         "SEC": 0xF800, # Rouge
-        "TXT": 0x3186  # Gris foncé
+        "NTP": 0x7BEF, # Gris clair
+        "TXT": st7789.WHITE  # 
     }
 }
 
@@ -103,7 +105,12 @@ def draw_analog_clock(hw, t):
 
     # Extraire Heures, Minutes, Secondes
     hh, mm, ss = t[3], t[4], t[5]
-
+    
+    # Date sur le côté "Montre de luxe"
+    f.fill_rect(cx+40, cy-9, 50, 16, c["DateBox"]) #petite boite pour la date
+    date_str = "{:02d}/{:02d}".format(t[2], t[1])
+    f.large_text(date_str, cx+45, cy-5, 1, c["TXT"])
+    
     # 2. Aiguille des Heures (Courte et épaisse)
     h_angle = math.radians((hh % 12) * 30 + mm * 0.5)
     hx = int(cx + (r * 0.5) * math.sin(h_angle))
@@ -126,12 +133,10 @@ def draw_analog_clock(hw, t):
     # 5. Moyeu central
     f.fill_rect(cx-2, cy-2, 4, 4, c["DIAL"])
     
-    # Date sur le côté "Montre de luxe"
-    date_str = "{:02d}/{:02d}".format(t[2], t[1])
-    f.large_text(date_str, cx+45, cy-5, 1, c["TXT"])
+  
     
     # affichage du serveru NTP
-    f.large_text(CONFIG["ntp_server"], cx-45, cy-60, 1, c["TXT"])
+    f.large_text(CONFIG["ntp_server"], cx-45, cy+40, 1, c["NTP"])
     hw.refresh()
 
 def main():
