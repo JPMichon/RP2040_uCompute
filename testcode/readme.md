@@ -5,6 +5,7 @@ Le programme uComputeOS.py est une version améliorée du FileManager. Il permet
 
 ## Il y a 2 versions, 
 ### OLED 
-fonctionne avec un SSD1306 et les boutons analogues du PCB
+Fonctionne avec un SSD1306 et les boutons analogues du PCB
 ### ST7789 
-fonctionne avec l'ecran IPS couleur 240x240 et les boutons analogues du PCB
+f
+Fonctionne avec l'ecran IPS couleur 240x240 et les boutons analogues du PCB
