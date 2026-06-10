@@ -191,10 +191,9 @@ def selected_file(nom_fichier):
                     exec(code, globals())
             except Exception as e:
                 fbuf.fill(st7789.BLACK) # Efface l'écran (le framefuffer)
-                fbuf.large_text("ERREUR :",30, 140, 2, st7789.RED)
-                fbuf.large_text(str(e)[:16],30, 140, 2, st7789.RED)
+                fbuf.large_text("ERREUR :",10, 140, 2, st7789.RED)
+                fbuf.large_text(str(e)[:24],30, 160, 1, st7789.RED)
                 display.blit_buffer(buffer, 0, 0, buffer_width, buffer_height)
-                oled.show()
                 time.sleep(3)
             break
         time.sleep_ms(50)
