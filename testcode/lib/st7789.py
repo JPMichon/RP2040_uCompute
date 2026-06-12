@@ -110,7 +110,7 @@ LIGHTCORAL = const(0xf410)
 PINK = const(0xfe58)
 HOTPINK = const(0xfdad)
 DEEPPINK = const(0xfc82)
-GREEN = const(0x10)
+GREEN = const(0x001F)
 GREENYELLOW = const(0xa97f)
 FOREST = const(0x2111)
 OLIVE = const(0x8010)
@@ -169,7 +169,7 @@ WIDTH_135 = [(135, 240, 52, 40),
 #ROTATIONS = [0x00, 0x60, 0xc0, 0xa0] # ‘0’ =RGB, (When MADCTL (36h) D3=’0’)
 ROTATIONS = [0x08, 0x68, 0xc8, 0xa8] #‘1’ =BGR, (When MADCTL (36h) D3=’1’)
 
-def color565(red, blue=0, green=0):
+def color565(red, green=0, blue=0):
     """
     Convert red, green and blue values (0-255) into a 16-bit 565 encoding.
     """

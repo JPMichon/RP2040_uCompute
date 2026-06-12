@@ -92,22 +92,40 @@ COLOR_MODE_16BIT = const(0x05)
 COLOR_MODE_18BIT = const(0x06)
 COLOR_MODE_16M = const(0x07)
 
-# Color definitions
-#https://github.com/newdigate/rgb565_colors
-BLACK = const(0x0000)
-BLUE = const(0x001F)
-RED = const(0xE004)
-GREEN = const(0x07E0)
-CYAN = const(0x07FF)
-MAGENTA = const(0xF81F)
-YELLOW = const(0xFFE0)
-WHITE = const(0xFFFF)
-MAROON=const(0x8000)
-FOREST=const(0x0184)
-NAVY=const(0x0010)
-PURPLE=const(0x714C)
-GRAY=const(0xBDF7)
 
+BLACK = const(0x0000)
+BLUE = const(0x7e0)
+AQUA = const(0x7ff)
+TURQUOISE = const(0x469c)
+STEELBLUE = const(0x45b0)
+SKYBLUE = const(0x8759)
+MIDNIGHTBLUE = const(0x1b83)
+RED = const(0xF800)
+ORANGE  = const(0xfd20)
+SALMON = const(0xfb90)
+CRIMSON = const(0xd9e2)
+LIGHTCORAL = const(0xf410)
+PINK = const(0xfe58)
+HOTPINK = const(0xfdad)
+DEEPPINK = const(0xfc82)
+GREEN = const(0x001F)
+GREENYELLOW = const(0xa97f)
+FOREST = const(0x2111)
+OLIVE = const(0x8010)
+LIME = const(0x1f)
+CYAN = const(0x7ff)
+MAGENTA = const(0xffe0)
+YELLOW = const(0xf81f)
+LIGHTYELLOW = const(0xff1f)
+GOLD = const(0xf81a)
+WHITE = const(0xFFFF)
+MAROON = const(0x88a8)
+NAVY = const(0x400)
+PURPLE = const(0x8400)
+GRAY = const(0x2965)
+DARKGRAY = const(0xad55)
+LIGHTGRAY = const(0xd69a)
+SILVER = const(0xc618)
 
 
 _ENCODE_PIXEL = ">H"
@@ -143,8 +161,10 @@ WIDTH_135 = [(135, 240, 52, 40),
              (240, 135, 40, 52)]
 
 # MADCTL ROTATIONS[rotation % 4]
-ROTATIONS = [0x00, 0x60, 0xc0, 0xa0]
-
+# Pour une raison que j'ignore, l'encodage BGR vs RGB semble inversé, comme c'est dans le même régistre que l'orientation de l'écran (RDDMADCTL (0Bh): Read Display MADCTL)
+# j'en profite pour patcher l'encodage couleur. 
+#ROTATIONS = [0x00, 0x60, 0xc0, 0xa0] # ‘0’ =RGB, (When MADCTL (36h) D3=’0’)
+ROTATIONS = [0x08, 0x68, 0xc8, 0xa8] #‘1’ =BGR, (When MADCTL (36h) D3=’1’)
 
 def color565(red, green=0, blue=0):
     """
