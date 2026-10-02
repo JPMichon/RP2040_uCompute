@@ -2,6 +2,8 @@
 
 Le **RP2040 uCompute** est une plateforme de développement embarquée, autonome et hautement modulaire basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue comme une solution matérielle tout-en-un, elle intègre un stockage étendu, des interfaces d'affichage polyvalentes ainsi qu'un écosystème de cartes filles interchangeables (Ethernet, WiFi, Radio, VGA), la rendant idéale pour les projets embarqués complexes, le prototypage réseau et l'apprentissage.
 
+La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) concu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
+
 <img width="778" height="350" alt="image" src="https://github.com/user-attachments/assets/68046cc3-ce54-43ec-a8df-1a742f71edf1" />
 
 
@@ -114,6 +116,35 @@ Ce guide vous apprendra pas à pas à :
 3. Écrire vos premiers scripts pour contrôler des entrées et des sorties.
 
 Une fois que vous aurez compris les bases du clignotement d'une LED ou de la lecture d'un bouton avec ce guide, l'écosystème de la **RP2040 uCompute** et ses scripts de test (`testcode/`) vous permettront d'aller beaucoup plus loin (affichage graphique, son, jeux et réseau) sans changer de méthode de travail !
+
+---
+
+## 💾 Partie Logicielle : uComputeOS
+
+La carte exécute **uComputeOS**, un mini-système d'exploitation embarqué écrit en MicroPython. 
+
+### Dépendances matérielles à inclure (dossier `lib/`) :
+* **Version Écran LCD :** `st7789py.py`, `framebuf2.py`, `vga1_8x8.py`, `vga2_bold_16x16.py`
+* **Version Écran OLED :** `ssd1306.py`
+* **Stockage commun :** `sdcard.py`
+
+### Caractéristiques majeures de uComputeOS :
+1. **Écran de démarrage (Splash Screen) :** Affiche les informations systèmes (`os.uname`), la version du firmware ainsi que l'espace Flash total et libre calculé en direct.
+2. **Gestionnaire de fichiers (FileManager) :** Détecte dynamiquement à l'allumage si une carte Micro SD est présente. L'utilisateur sélectionne son espace de stockage racine (`FLASH` ou `SD`).
+3. **Navigation & Sélection :** Interface visuelle navigable à l'aide du bouton analogique (`Up`, `Down`, `Select`). Un curseur en forme de triangle pointe vers le script sélectionné.
+4. **Exécution dynamique (`EXEC`) :** Permet d'ouvrir n'importe quel fichier `.py` utilisateur présent sur le support et de l'exécuter à la volée. En cas d'erreur de code, uComputeOS capture l'exception et affiche un écran d'erreur rouge sans faire planter la carte.
+5. **Copie Inter-Stockage (`CP>SD` / `CP>\`) :** Intègre une fonction de copie par blocs (512 octets) permettant de transférer un script de la mémoire Flash interne vers la carte SD (et inversement) directement depuis l'interface matérielle.
+
+### ⚙️ Exécution automatique au démarrage (Configuration en `main.py`)
+
+Pour que l'interface graphique (**uComputeOS**) se lance automatiquement dès la mise sous tension de la carte sans nécessiter d'ordinateur, vous devez l'enregistrer comme script principal :
+
+1. **Sélectionnez la version** du code correspondant à votre configuration matérielle (Version Écran LCD ST7789 ou Version Écran OLED SSD1306).
+2. **Renommez le fichier** choisi en **`main.py`**.
+3. **Transférez-le à la racine** de la mémoire Flash interne du RP2040 (et non dans le dossier `lib/`) à l'aide de votre IDE (comme Thonny).
+4. **Assurez-vous** que toutes les dépendances requises (`sdcard.py`, pilotes d'écran et polices de caractères) sont bien présentes dans le dossier `/lib` de la mémoire interne. 
+
+Au prochain redémarrage ou cycle d'alimentation, le micrologiciel MicroPython cherchera nativement le fichier `main.py` et propulsera instantanément la GUI à l'écran.
 
 ---
 
