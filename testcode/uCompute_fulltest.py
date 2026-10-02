@@ -1,3 +1,12 @@
+# -----------------------------------------------------------------------------
+#  RP2040 uCompute - uCompute_fulltest
+#  Copyright (c) 2026 JP Michon
+#  
+#  Ce programme et le matériel associé sont protégés par la licence :
+#  Creative Commons Attribution - Pas d'Utilisation Commerciale - 
+#  Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)
+# -----------------------------------------------------------------------------
+
 from machine import I2C, UART, SPI, PWM, Pin
 from random import random, seed, randint
 from utime import sleep_us, ticks_cpu, ticks_us, ticks_diff
