@@ -40,6 +40,14 @@ En passant de la version 1.2 à la 1.3, le connecteur d'extension **H1** a été
 * **Ajout du rail 5V :** Permet d'alimenter directement des servomoteurs, de petits moteurs ou des capteurs 5V sans avoir à repiquer l'alimentation directement sur le port USB.
 * **Gain de broches logiques :** Passage de 4 à **6 broches numériques dédiées**, augmentant le nombre de capteurs ou d'actionneurs simultanés.
 
+### Composition détaillée du Bornier d'extension H1 (1x14 Broches) :
+1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
+2. **3.3V** (Régulée via l'AMS1117-3.3)
+3. **GND** (Masse commune)
+4. **UART 0** : `GP0` (TX) & `GP1` (RX)
+5. **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)
+6. **6 Broches Numériques (GPIO) :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`
+
 ---
 
 ## 📍 Cartographie des Broches (Pinout)
