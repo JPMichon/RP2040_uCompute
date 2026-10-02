@@ -79,12 +79,7 @@ L'empreinte mécanique et électrique est compatible avec plusieurs technologies
 ---
 
 ### 2. Module d'Affichage & Vidéo (Socket Avant)
-* **µCompute VGA8 Adaptor (REV 1.0) :** Se connecte à la place de l'écran LCD ST7789 pour générer et exporter un signal vidéo analogique vers un moniteur standard via un port **VGA (DE-15)**. Les signaux numériques sont convertis par un réseau de résistances :
-  * `GP2` ➡️ Horloge de Synchronisation Horizontale (**HSync**)
-  * `GP3` ➡️ Horloge de Synchronisation Verticale (**VSync**)
-  * `GP4` ➡️ Signal Couleur **Rouge** (Red)
-  * `GP5` ➡️ Signal Couleur **Vert** (Green)
-  * `GP6` ➡️ Signal Couleur **Bleu** (Blue)
+* **µCompute VGA8 Adaptor (REV 1.0) :** Se connecte à la place de l'écran LCD ST7789 pour générer et exporter un signal vidéo analogique vers un moniteur standard via un port **VGA (DE-15)**. 
 
 <img width="343" height="292" alt="image" src="https://github.com/user-attachments/assets/a070a613-6fbb-4731-9103-bb9ae0ae5e83" />
 
