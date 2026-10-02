@@ -114,29 +114,6 @@ Une fois que vous aurez compris les bases du clignotement d'une LED ou de la lec
 
 ---
 
-## 💾 Logiciel & Programme de Diagnostic (`main.py`)
-
-La carte est entièrement programmable en **MicroPython**. Un script de diagnostic complet est fourni pour valider l'intégralité du PCB (soudures et composants) lors de l'assemblage.
-
-### Dépendances requises (dossier `lib/`) :
-* `st7789.py` & `framebuf2.py` (Affichage graphique)
-* `EEPROM_CAT24C128.py` (Sauvegarde I2C)
-* `sdcard.py` (Gestion du stockage FAT)
-* `uping.py` (Validation des requêtes réseau ICMP)
-
-### Fonctionnalités du Menu de Diagnostic embarqué :
-Au démarrage, l'application transmet un bilan complet de la mémoire (Flash et RAM) sur le port série UART. Un menu interactif s'affiche ensuite sur l'écran principal, navigable à l'aide des boutons poussoirs analogiques :
-
-1. **Écran IPS :** Lance une animation de boîtes rebondissantes de couleurs pour tester les pixels.
-2. **Led GP25 :** Fait clignoter la LED d'état système.
-3. **Scan du I2C :** Analyse le bus et retourne les adresses physiques détectées (ex: `0x50` pour l'EEPROM).
-4. **EEPROM :** Teste un cycle d'écriture ("uComp"), de lecture et d'effacement de la puce CAT24C128.
-5. **Piezo :** Joue une mélodie via la modulation de largeur d'impulsion (PWM).
-6. **NeoPixel :** Exécute un jeu de lumière (Light Show) multicolore sur le port WS2812.
-7. **MicroSD :** Vérifie l'insertion de la carte, calcule son volume, monte la partition et écrit un log `uCompute.log`.
-8. **IO Header :** Fait osciller l'intégralité des broches d'extension du connecteur H1 pour une vérification rapide.
-9. **Ethernet :** Initialise le module réseau configuré, fait une requête DHCP, affiche l'IP obtenue et effectue un `ping` fonctionnel vers *google.com*.
-
 ## 📜 Licence
 
 Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
