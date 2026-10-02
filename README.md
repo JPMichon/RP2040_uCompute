@@ -97,7 +97,7 @@ Il y a en réalité **très peu de différences** fondamentales entre cette cart
 
 Puisque l'architecture est la même, vous pouvez utiliser à 100 % les guides, tutoriels et documentations officiels de la fondation Raspberry Pi pour apprendre à programmer votre RetroPico. 
 
-Pour faire vos premiers pas, nous vous recommandons vivement le guide officiel :
+Pour faire vos premiers pas, nous vous recommandons vivement le guide officiel : <br>
 👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)**
 
 Ce guide vous apprendra pas à pas à :
