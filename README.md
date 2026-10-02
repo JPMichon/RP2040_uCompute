@@ -37,18 +37,19 @@ La carte a évolué pour moderniser sa connectique et offrir une flexibilité d'
 | **Option d'Affichage** | Écran LCD IPS ST7789 uniquement | **Double option :** ST7789 (SPI) ou OLED SSD1306 (I2C) |
 | **Bornier IOs (H1)** | 3V3 + 4 Digitals, 2 ADC + UART | **3V3, 5V + 6 Digitals, 2 ADC + UART** |
 
-### Focus sur l'évolution du Bornier IOs (H1) :
-En passant de la version 1.2 à la 1.3, le connecteur d'extension **H1** a été considérablement enrichi pour faciliter le prototypage de projets gourmands en ressources :
-* **Ajout du rail 5V :** Permet d'alimenter directement des servomoteurs, de petits moteurs ou des capteurs 5V sans avoir à repiquer l'alimentation directement sur le port USB.
-* **Gain de broches logiques :** Passage de 4 à **6 broches numériques dédiées**, augmentant le nombre de capteurs ou d'actionneurs simultanés.
+### Focus sur l'évolution du bornier IOs (H1) :
+Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
-### Composition détaillée du Bornier d'extension H1 (1x14 Broches) :
+### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
 2. **3.3V** (Régulée via l'AMS1117-3.3)
 3. **GND** (Masse commune)
 4. **UART 0** : `GP0` (TX) & `GP1` (RX)
 5. **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)
 6. **6 Broches Numériques (GPIO) :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`
+
+> [!WARNING]
+> **Le RP2040 n'est pas tolérent au 5V. Si vous appliquez directement du 5V sur une broche, vous risquez d'endommager ou de réduire considérablement la durée de vie du microcontrôleur.**
 
 ---
 
