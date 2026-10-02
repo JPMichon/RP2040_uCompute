@@ -59,7 +59,8 @@ Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 m
 
 la façon la plus usuelle est d'alimenter le circuit via le connecteur USB.  Néanmoins, il est possible d'alimenté le circuit en **5v** a partir du de la **broche 1** du connecteur Neopixel ou VIA la **pin 1** du bornier d'extension. La Diode **D1** protège le port USB du retour du courant mais il est toujours préférable de couper l'alimentation **5v** si vous raccorder le circuit a un ordinateur.
 
-<img width="560" height="271" alt="image" src="https://github.com/user-attachments/assets/6f00f1c2-3f3b-44df-87f3-6560458e99ae" />
+<img width="571" height="271" alt="image" src="https://github.com/user-attachments/assets/c3ac5b20-0def-4023-9256-9ab2067576d6" />
+
 
 ---
 
