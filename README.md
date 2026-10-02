@@ -57,7 +57,10 @@ Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 m
 
 ## 🔌 Alimentation Alternative en 5v
 
-la façon la plus usuelle est d'alimenter le circuit via le connecteur USB.  Néanmoins, il est possible d'alimenté le circuit en **5v** a partir du de la **broche 1** du connecteur Neopixel ou VIA la **pin 1** du bornier d'extension. La Diode **D1** protège le port USB du retour du courant mais il est toujours préférable de couper l'alimentation **5v** si vous raccorder le circuit a un ordinateur.
+la façon la plus usuelle est d'alimenter le circuit via le connecteur USB.  Néanmoins, il est possible d'alimenté le circuit en **5v** a partir du de la **broche 1** du connecteur Neopixel ou VIA la **pin 1** du bornier d'extension. La Diode **D1** protège le port USB du retour du courant mais il est toujours préférable de couper l'alimentation **5v** si vous raccorder le circuit a un ordinateur. 
+
+> [!WARNING]
+> Le Vin absolu du régulateur AP3222H-3.3TRG1 est de 6.5v, Donc **Max 5.5v**.
 
 <img width="571" height="271" alt="image" src="https://github.com/user-attachments/assets/c3ac5b20-0def-4023-9256-9ab2067576d6" />
 
