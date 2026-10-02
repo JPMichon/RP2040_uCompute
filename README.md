@@ -48,12 +48,15 @@ Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 m
 5. **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)
 6. **6 Broches Numériques (GPIO) :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`
 
-> [!WARNING]
+<BR>
+
+> [!CAUTION]
 > **Le RP2040 n'est pas tolérent au 5V. Si vous appliquez directement du 5V sur une broche, vous risquez d'endommager ou de réduire considérablement la durée de vie du microcontrôleur.**
 
+<BR><BR>
 ---
 
-## 📍 Cartographie des Broches (Pinout)
+## 📍 Cartographie des ports
 
 Voici l'attribution logicielle exacte des broches du RP2040 définie pour la plateforme :
 
