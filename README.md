@@ -1,79 +1,153 @@
-# RP2040_UCompute
-Plateforme de développement basé sur un RP2040
-taille: 96mm x 42mm
-<BR>
-<img width="573" height="281" alt="image" src="https://github.com/user-attachments/assets/853fa8fa-20b1-4d21-8bcf-28d7ebb2a3ee" />
+# 🚀 RP2040 uCompute (REV 1.3)
+
+Le **RP2040 uCompute** est une plateforme de développement embarquée, autonome et hautement modulaire basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue comme une solution matérielle tout-en-un, elle intègre un stockage étendu, des interfaces d'affichage polyvalentes ainsi qu'un écosystème de cartes filles interchangeables (Ethernet, WiFi, Radio, VGA), la rendant idéale pour les projets embarqués complexes, le prototypage réseau et l'apprentissage.
+
+<img width="778" height="350" alt="image" src="https://github.com/user-attachments/assets/68046cc3-ce54-43ec-a8df-1a742f71edf1" />
 
 
-## Caractéristiques:
 
-- RP2040 
-- LCD 1.3" 240x240 IPS ST7789
-- EEPROM I2C (optionel)
-- Bornier pour néopixel
-- 1 Connecteur JST pour des modules I2C
-- 3 boutons pour l'interface utilisateur (relié ADC0)
-- SIP pour prototypage (8 IOs).
-- Port USB (USB Mini-B)
-- Fusible PTC (500ma)
-- Piezo
-- Port MicroSD
-- QSPI flash en boitier SOP8 permettant de choisir la taille (2meg - 16meg)
-- DEL connecté au port standard GP25
-- support pour un module Ethernet W5500
-- Trous de montage 3mm
-<BR>
- [!IMPORTANT] :
-    le module W5500 requière environ 200ma, assurez vous d'avoir une alimentation conséquente.<BR><BR>
+---
 
-## Répertoires:
-  Firmware: Firmware compilé en fonction des différentes configuration du SPI <BR>
-  Hardware: Schématique, Gerber <BR>
-  TestCode: Code Python servant d'exemple d'utilisation des différentes fonctionnalitées <BR>
+## 🛠️ Spécifications Techniques & Dimensions
 
-## Assignation des IOs
+* **Microcontrôleur :** Raspberry Pi RP2040 cadencé à 125 MHz (horloge externe par quartz de 12 MHz).
+* **Dimensions du PCB :** 96 mm x 42 mm. Format compact allongé avec 4 trous de montage M3 aux quatre coins.
+* **Mémoire Flash QSPI :** Jusqu'à 16Mb en fonction du Module de memoire soudé en U2.
+* **Stockage non volatile :** EEPROM I2C `CAT24Cxx` 
+* **Alimentation & Sécurité :** Connecteur USB-C moderne protégé par un fusible réarmable de 500 mA et des diodes anti-retour (`MBR120LSFT` et `1N5819`) pour sécuriser la double alimentation (USB + Neopixel).
+* **Interfaces utilisateur :** 
+  * 3 boutons-poussoirs utilisateurs (BTN1, BTN2, BTN3).
+  * Boutons système dédiés `RESET` et `BOOT` (format glissière profilé).
+  * Zone d'annotation sérigraphiée blanche "Flash :" pour inscrire la version du firmware ou la capacité mémoire.
+  * LEDs d'état d'activité RX/TX et LED système `GP25`.
+* **Audio & Éclairage :** Un buzzer piézoélectrique (4000 Hz) et un connecteur pour ruban de LEDs adressables `NEOPIXEL`.
+* **Stockage amovible :** Lecteur de carte Micro SD (TF Card) câblé sur bus SPI.
 
-```Python
-_MicroSD_Detect = 7 # détection de la présence d'une carte MicroSD (GP7) <BR>
-_MicroSD_Select = 13 # définition de la pin Select du SDCARD (GP13) <BR>
-_W5500_Select = 8 # définition de la pin Select du W5500 (GP8) <BR>
-_W5500_Reset = 10 # définition de la pin Reset du W5500 (GP10) <BR>
-_SPI1_SCK = 14 # SPI1_shared Clock <BR>
-_SPI1_MOSI = 15 # SPI1_shared MOSI <BR>
-_SPI1_MISO = 12 # SPI1_shared MISO <BR>
-_ST7789_SCK = 2 # définition de la pin Clock du ST7789 (GP2) SPI0 <BR>
-_ST7789_MOSI = 3 # définition de la pin MOSI du ST7789 (GP3) SPI0 <BR>
-_ST7789_RESET = 4 # définition de la pin Reset du ST7789 (GP4) <BR>
-_ST7789_DC = 5 # définition de la pinSelect du ST7789 (GP5) <BR>
-_ST7789_BL = 6 # définition de la pinBacklit du ST7789 (GP6) <BR>
-_Led_System = 25 # définition du port  del systeme (GP25) <BR>
-_I2C_SDA = 20 # définition de Data du I2C(0) (GP20) <BR>
-_I2C_SCL = 21 # définition de SCL du I2C(0) (GP21) <BR>
-_Buzzer = 11 # définition du  buzzer (GP11) <BR>
-_NeoPixel = 23 # définition du port NeoPixel (GP23) <BR>
-_EEPROM_ADDR = 0x50 # adresse du eeprom <BR>
-_Boutons = 26 # définition du port analogue des boutons (GP26) <BR>
-_UART = 0 # UART par defaut <BR>
-_TX_PIN = 0 # TX Pin (GP0) <BR>
-_RX_PIN = 1 # TX Pin (GP1) <BR>
-```
+---
 
-## Rendu 3D
-Rev 1.2:<BR>
-<img width="1110" height="470" alt="image" src="https://github.com/user-attachments/assets/91428e7b-5c0c-451a-8e28-290e433af26a" /><BR>
-Rev 1.3:<BR>
-<img width="2052" height="878" alt="image" src="https://github.com/user-attachments/assets/714fb4e0-fde6-49c3-9d60-bca783d2fd09" /><BR>
+## ⏳ Historique des Révisions
 
-## BOM
-Rev 1.2: 
-<img width="1707" height="962" alt="image" src="https://github.com/user-attachments/assets/d4e758f1-466e-432b-9660-30dd6cbc7dc9" /><BR>
+La carte a évolué pour moderniser sa connectique et offrir une flexibilité d'affichage maximale.
 
-## Révision
-Rev 1.1: Release candidat. <BR>
-Rev 1.2: Corrections; ajout d'une diode de protection entre le 5v du port USB et le header du Neopixel et une seconde diode sur la ligne DO du Neopixel.<BR>
-Rev 1.3: Remplacer le port USB par un USB-C. Ajouter un emplacement pour un LCD alternatif SSD1306. Ajout de pin sur le peigne de prototypage pour le rencontre compatible au uCompute2.<BR><BR>
-## Références:
-https://github.com/Wiznet/RP2040-HAT-MicroPython/blob/main/Ethernet%20Example%20Getting%20Started%20%5BMicropython%5D.md
-https://github.com/Wiznet/RP2040-HAT-MicroPython/tree/main/examples
-https://docs.micropython.org/en/latest/rp2/quickref.html
+| Caractéristique | 🔴 Version 1.2 (Septembre 2025) | 🟣 Version 1.3 (Décembre 2025) |
+| :--- | :--- | :--- |
+| **Connecteur USB** | **Micro-USB** | **USB-C** |
+| **Option d'Affichage** | Écran LCD IPS ST7789 uniquement | **Double option :** ST7789 (SPI) ou OLED SSD1306 (I2C) |
+| **Bornier IOs (H1)** | 3V3 + 4 Digitals, 2 ADC + UART | **3V3, 5V + 6 Digitals, 2 ADC + UART** |
+
+### Focus sur l'évolution du Bornier IOs (H1) :
+En passant de la version 1.2 à la 1.3, le connecteur d'extension **H1** a été considérablement enrichi pour faciliter le prototypage de projets gourmands en ressources :
+* **Ajout du rail 5V :** Permet d'alimenter directement des servomoteurs, de petits moteurs ou des capteurs 5V sans avoir à repiquer l'alimentation directement sur le port USB.
+* **Gain de broches logiques :** Passage de 4 à **6 broches numériques dédiées**, augmentant le nombre de capteurs ou d'actionneurs simultanés.
+
+---
+
+## 📍 Cartographie des Broches (Pinout)
+
+Voici l'attribution logicielle exacte des broches du RP2040 définie pour la plateforme :
+
+| Périphérique / Fonction | Broche RP2040 | Rôle & Configuration |
+| :--- | :--- | :--- |
+| **LED Système** | `GP25` | Indicateur d'état |
+| **Buzzer** | `GP11` | Sortie audio (Piezo via PWM) |
+| **Port NeoPixel** | `GP23` | Sortie données WS2812 (8 LEDs par défaut) |
+| **Boutons Utilisateurs** | `GP26` | Entrée analogique (ADC0) avec diviseur de tension |
+| **UART 0** | `GP0` (TX) / `GP1` (RX) | Liaison série par défaut (9600 bauds) |
+| **I2C 0 (EEPROM / SSD1306)** | `GP20` (SDA) / `GP21` (SCL) | Bus I2C partagé (Adresse EEPROM : `0x50`) |
+| **Écran LCD ST7789 (SPI 0)** | `GP2` (SCK) / `GP3` (MOSI) <br> `GP4` (Reset) / `GP5` (DC) / `GP6` (BL) | Contrôle de l'écran principal et du rétroéclairage |
+| **Bus SPI 1 (Partagé)** | `GP14` (SCK) / `GP15` (MOSI) / `GP12` (MISO) | Bus de données pour carte SD et port d'extension |
+| **Carte Micro SD** | `GP13` (CS) / `GP7` (Detect) | Sélection SPI et détection matérielle de la carte |
+| **Port d'Extension (Addon)** | `GP8` (CS) / `GP10` (Reset) / `GP9` (INT) | Broches de contrôle dédiées aux modules de communication |
+| **Header latéral (H1)** | `GP16, 17, 18, 19, 22, 24, 27, 28` | Broches d'extension générales (GPIO / ADC1 / ADC2) |
+
+---
+
+## 🔌 Écosystème de Modules d'Extension (Add-ons)
+
+Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée.
+
+### 1. Modules de Communication (Socket Arrière)
+L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
+
+<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
+* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiere un firmware special)
+* **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.
+*  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
+* **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
+<img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+
+---
+
+### 2. Module d'Affichage & Vidéo (Socket Avant)
+* **µCompute VGA8 Adaptor (REV 1.0) :** Se connecte à la place de l'écran LCD ST7789 pour générer et exporter un signal vidéo analogique vers un moniteur standard via un port **VGA (DE-15)**. Les signaux numériques sont convertis par un réseau de résistances :
+  * `GP2` ➡️ Horloge de Synchronisation Horizontale (**HSync**)
+  * `GP3` ➡️ Horloge de Synchronisation Verticale (**VSync**)
+  * `GP4` ➡️ Signal Couleur **Rouge** (Red)
+  * `GP5` ➡️ Signal Couleur **Vert** (Green)
+  * `GP6` ➡️ Signal Couleur **Bleu** (Blue)
+
+<img width="343" height="292" alt="image" src="https://github.com/user-attachments/assets/a070a613-6fbb-4731-9103-bb9ae0ae5e83" />
+
+---
+
+## 🎓 Accessibilité & Compatibilité avec le Raspberry Pi Pico
+
+Si vous débutez en programmation ou en électronique, ne soyez pas intimidés ! Bien que la **RP2040 uCompute** intègre de nombreux composants sur un seul circuit imprimé (VGA, Wi-Fi, MicroSD, etc.), **son cœur reste un Raspberry Pi Pico standard**. 
+
+Il y a en réalité **très peu de différences** fondamentales entre cette carte et un Pi Pico classique :
+* **Même puce :** Le microcontrôleur principal est le RP2040. Tout code écrit pour un Pico standard fonctionnera ici.
+* **Mêmes bases :** La logique de programmation, l'utilisation des broches (GPIO) et l'environnement restent identiques.
+
+### 📚 Ressources pour les débutants
+
+Puisque l'architecture est la même, vous pouvez utiliser à 100 % les guides, tutoriels et documentations officiels de la fondation Raspberry Pi pour apprendre à programmer votre RetroPico. 
+
+Pour faire vos premiers pas, nous vous recommandons vivement le guide officiel :
+👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)**
+
+Ce guide vous apprendra pas à pas à :
+1. Installer et configurer l'environnement de développement **Thonny**.
+2. Connecter votre carte à votre ordinateur et y installer le micrologiciel **MicroPython**.
+3. Écrire vos premiers scripts pour contrôler des entrées et des sorties.
+
+Une fois que vous aurez compris les bases du clignotement d'une LED ou de la lecture d'un bouton avec ce guide, l'écosystème de la **RP2040 uCompute** et ses scripts de test (`testcode/`) vous permettront d'aller beaucoup plus loin (affichage graphique, son, jeux et réseau) sans changer de méthode de travail !
+
+---
+
+## 💾 Logiciel & Programme de Diagnostic (`main.py`)
+
+La carte est entièrement programmable en **MicroPython**. Un script de diagnostic complet est fourni pour valider l'intégralité du PCB (soudures et composants) lors de l'assemblage.
+
+### Dépendances requises (dossier `lib/`) :
+* `st7789.py` & `framebuf2.py` (Affichage graphique)
+* `EEPROM_CAT24C128.py` (Sauvegarde I2C)
+* `sdcard.py` (Gestion du stockage FAT)
+* `uping.py` (Validation des requêtes réseau ICMP)
+
+### Fonctionnalités du Menu de Diagnostic embarqué :
+Au démarrage, l'application transmet un bilan complet de la mémoire (Flash et RAM) sur le port série UART. Un menu interactif s'affiche ensuite sur l'écran principal, navigable à l'aide des boutons poussoirs analogiques :
+
+1. **Écran IPS :** Lance une animation de boîtes rebondissantes de couleurs pour tester les pixels.
+2. **Led GP25 :** Fait clignoter la LED d'état système.
+3. **Scan du I2C :** Analyse le bus et retourne les adresses physiques détectées (ex: `0x50` pour l'EEPROM).
+4. **EEPROM :** Teste un cycle d'écriture ("uComp"), de lecture et d'effacement de la puce CAT24C128.
+5. **Piezo :** Joue une mélodie via la modulation de largeur d'impulsion (PWM).
+6. **NeoPixel :** Exécute un jeu de lumière (Light Show) multicolore sur le port WS2812.
+7. **MicroSD :** Vérifie l'insertion de la carte, calcule son volume, monte la partition et écrit un log `uCompute.log`.
+8. **IO Header :** Fait osciller l'intégralité des broches d'extension du connecteur H1 pour une vérification rapide.
+9. **Ethernet :** Initialise le module réseau configuré, fait une requête DHCP, affiche l'IP obtenue et effectue un `ping` fonctionnel vers *google.com*.
+
+## 📜 Licence
+
+Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
+
+❌ **L'utilisation commerciale de ce projet (revente de PCBs nus, kits ou cartes retroPico assemblées) est strictement interdite sans autorisation préalable de l'auteur.**
+
+Consultez le fichier [LICENSE](LICENSE) pour lire l'intégralité des termes.
+
+## ☕ Soutenir le projet
+
+Si vous appréciez mon travail et souhaitez m'offrir un café pour me soutenir bénévolement dans mes futurs projets de soudure et de code, vous pouvez me laisser un pourboire sur Ko-fi. C'est entièrement volontaire et grandement apprécié !
+			
+
 
