@@ -116,6 +116,7 @@ Ce guide vous apprendra pas à pas à :
 3. Écrire vos premiers scripts pour contrôler des entrées et des sorties.
 
 Une fois que vous aurez compris les bases du clignotement d'une LED ou de la lecture d'un bouton avec ce guide, l'écosystème de la **RP2040 uCompute** et ses scripts de test (`testcode/`) vous permettront d'aller beaucoup plus loin (affichage graphique, son, jeux et réseau) sans changer de méthode de travail !
+<BR><BR>
 
 ---
 
