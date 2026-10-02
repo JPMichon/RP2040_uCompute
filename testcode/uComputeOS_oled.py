@@ -1,8 +1,14 @@
-# ---------------------------------------------------------
+# -----------------------------------------------------------------------------
+#  RP2040 uCompute - uComputeOS
+#  Copyright (c) 2026 JP Michon
+#  
+#  Ce programme et le matériel associé sont protégés par la licence :
+#  Creative Commons Attribution - Pas d'Utilisation Commerciale - 
+#  Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)
+# -----------------------------------------------------------------------------
 # uComputeOS OLED Version
 # Identification de la version du PCB pour la configuration des IOs
-
-# ---------------------------------------------------------
+# -----------------------------------------------------------------------------
 from machine import I2C, Pin, SPI, PWM
 from ssd1306 import SSD1306_I2C
 import time
