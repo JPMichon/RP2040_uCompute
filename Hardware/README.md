@@ -6,10 +6,9 @@ Ce répertoire regroupe l'intégralité des fichiers de conception matérielle d
 
 ## 📐 Schémas Électriques & Fabrication (Gerber)
 
-* **`Version 1.2`** : Seul le schématique est présent pour référence historique.
-* **`Version 1.3`** : Fichiers schématique et fichier Gerber pour produire le circuit imprimé (PCB) chez des fabricants comme JLCPCB, PCBWay ou d'autres.
+* **`Addons`** : inclus les fichiers schématique et fichier Gerber pour produire le circuit imprimé (PCB) des modules complémentaires.
+* **`V1.2`** : **UCompute V1.2** : Seul le schématique est présent pour référence historique.
+* **`V1.3`** : **UCompute V1.3** : Fichiers schématique et fichier Gerber pour produire le circuit imprimé (PCB) chez des fabricants comme JLCPCB, PCBWay ou d'autres.
   
-Le répertoire **Addons** inclus les fichiers schématique et fichier Gerber pour produire le circuit imprimé (PCB) des modules complémentaires
-
 ---
 
