@@ -21,7 +21,10 @@ Pour écrire le code, tu dois obligatoirement utiliser l'architecture matériell
 * W5500 : Select (GP8), Reset (GP10), SCK (GP14), MOSI (GP15). MISO (GP12).
 * Carte MicroSD : SCK (GP14), MOSI (GP15), MISO (GP12), Select (GP13) et Card_Detect (GP7). 
 * NRF24l01+ : Select (GP8), Reset (GP10), SCK (GP14), MOSI (GP15).MISO (GP12).
-* Bouton utilisateur : User_Button (GP26). lecture analogue: < 7000: #Down, < 12000: #Select, < 16000: # Up
+* - Bouton utilisateur : Interrupteur analogique unique (GP26) relié à un diviseur de tension pour 3 boutons physiques.
+  - Seuils de lecture ADC bruts (read_u16) : < 7000 = #Down, < 12000 = #Select, < 16000 = #Up.
+  - Comportement par défaut : Tout script exploitant ces boutons doit obligatoirement inclure un mécanisme d'anti-rebond (debounce) efficace et bloquer la boucle de lecture tant que le bouton physique n'a pas été relâché par l'utilisateur (seuil brut         repassé au-dessus de 16000).
+
 * bornier IOs : (GP16), (GP17), (GP18), (GP19), (GPIO27/ADC1), (GPIO28/ADC2), UART TX(GP0), UART RX(GP1)
 * EEPROM_ADDR = 0x50 
 * Connecteur I2C: SDA(GP20), SCL(GP21)
