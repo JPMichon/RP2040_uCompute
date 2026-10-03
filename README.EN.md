@@ -47,7 +47,7 @@ The H1 Header facilitates prototyping. The standard 2.54 mm spacing allows it to
 6. **6 Digital Pins (GPIO): :** `GP16`, `GP17`, `GP18`, `GP19`, `GP22`, `GP24`
 
 > [!CAUTION]
-> **Le RP2040 n'est pas tolérant au 5V.** 
+> **The RP2040 is not 5V tolerant.** 
 >  According to the *Absolute Maximum Ratings* section of the official [RP2040 Datasheet](https://pip-assets.raspberrypi.com/categories/814-rp2040/documents/RP-008371-DS-1-rp2040-datasheet.pdf), the absolute maximum voltage on the I/O pins (`IOVDD`) is **3.63V**. Applying 5V directly will destroy the microcontroller.
 <BR>
 
