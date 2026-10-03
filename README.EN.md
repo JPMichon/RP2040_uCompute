@@ -10,6 +10,14 @@ The board offers a dual software approach: it can be programmed and used exactly
 
 ---
 
+# 🤖 AI Coding Assistants
+
+If you are using an AI agent (such as ChatGPT, Claude, or GitHub Copilot) to help you develop on the RP2040 uCompute, configure it instantly by copying and pasting one of our custom profiles. The AI will immediately know all the exact pinout definitions and addresses of the board to code without making hardware errors!
+
+💼 **RP2040 uCompute Developer [Freelance Mode](./RP2040_UCompute_FreelanceCoder.md)** Engineered for efficiency and speed. The AI behaves like a senior programmer at your service: you lay out your concept or requirements, and it delivers a complete, optimized script that is immediately ready to be copied and pasted.
+  
+---
+
 ## 🛠️ Technical Specifications & Dimensions
 
 • **Microcontroller:** Raspberry Pi RP2040 clocked at 125 MHz (12 MHz external crystal oscillator).
