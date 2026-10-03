@@ -1,5 +1,8 @@
 # 🚀 RP2040 uCompute
 
+## [English version available here](./README.EN.md)
+
+
 Le **RP2040 uCompute** est une plateforme de développement embarquée, autonome et hautement modulaire basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue comme une solution matérielle tout-en-un, elle intègre un stockage étendu, des interfaces d'affichage polyvalentes ainsi qu'un écosystème de cartes filles interchangeables (Ethernet, WiFi, Radio, VGA), la rendant idéale pour les projets embarqués complexes, le prototypage réseau et l'apprentissage.
 
 La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) conçu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
