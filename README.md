@@ -51,8 +51,8 @@ Le bornier H1 facilite le prototypage. l'espacement est standard a 2,54 mm ceci 
 <BR>
 
 > [!CAUTION]
-> **Le RP2040 n'est pas tolérent au 5V. Si vous appliquez directement du 5V sur une broche, vous risquez d'endommager ou de réduire considérablement la durée de vie du microcontrôleur.**
-
+> **Le RP2040 n'est pas tolérant au 5V.** 
+> Selon la section *Absolute Maximum Ratings* de la [fiche technique officielle du RP2040 (Datasheet)](https://pip-assets.raspberrypi.com/categories/814-rp2040/documents/RP-008371-DS-1-rp2040-datasheet.pdf), la tension maximale absolue sur les broches d'E/S (`IOVDD`) est de **3,63V**. L'application directe de 5V détruira le microcontrôleur.
 <BR>
 
 ## 🔌 Alimentation Alternative en 5v
