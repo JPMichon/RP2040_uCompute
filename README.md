@@ -46,10 +46,10 @@ La carte a évolué pour moderniser sa connectique et offrir une flexibilité d'
 | **Option d'Affichage** | Écran LCD IPS ST7789 uniquement | **Double option :** ST7789 (SPI) ou OLED SSD1306 (I2C) |
 | **Bornier IOs (H1)** | 3V3 + 4 Digital IO, 2 ADC + UART | **3V3, 5V + 6 Digital IO, 2 ADC + UART** |
 
-### Focus sur l'évolution du bornier IOs (H1) :
-Le bornier H1 facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
+### Le bornier ( 1x14 pins Header):
+Le bornier (pins Header) facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
-### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
+### les signaux:
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
 2. **3.3V** (Régulée via l'AP2114H-3.3TRG1)
 3. **GND** (Masse commune)
