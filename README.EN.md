@@ -10,12 +10,12 @@ The board offers a dual software approach: it can be programmed and used exactly
 
 ---
 
-# 🤖 AI Coding Assistants
+# 🤖 Assistants de Codage IA
 
-If you are using an AI agent (such as ChatGPT, Claude, or GitHub Copilot) to help you develop on the RP2040 uCompute, configure it instantly by copying and pasting one of our custom profiles. The AI will immediately know all the exact pinout definitions and addresses of the board to code without making hardware errors!
+Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2040 uCompute, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
 
-💼 **[RP2040 uCompute Developer Freelance Mode](./RP2040_UCompute_FreelanceCoder.md)** Engineered for efficiency and speed. The AI behaves like a senior programmer at your service: you lay out your concept or requirements, and it delivers a complete, optimized script that is immediately ready to be copied and pasted.
-  
+💼 **[Mode Développeur Freelance de la RP2040 uCompute](RP2040_UCompute_FreelanceCoder.md)** Conçu pour l'efficacité et la vitesse. L'IA se comporte comme un programmeur senior à votre service : vous lui exposez votre concept ou votre cahier des charges, et elle vous livre un script complet, optimisé et immédiatement prêt à être copié-collé.
+
 ---
 
 ## 🛠️ Technical Specifications & Dimensions
