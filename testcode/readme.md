@@ -1,11 +1,14 @@
-## uComputeOS
-Le programme uComputeOS.py est une version améliorée du FileManager. Il permet au choix de naviguer dans le système de fichiers (File System) de la Flash ou de la carte SD si elle est présente. Il permet également de copier des fichiers de la Flash vers la carte SD et vice-versa, en plus de pouvoir lancer les applications soit depuis la Flash, soit depuis la carte SD. Si vous sauvegardez le programme sous le nom de main.py dans la Flash, il s'exécutera automatiquement au démarrage du uCompute. N'oubliez pas d'ajouter les librairies/dépendances dans la mémoire flash. 
+# 📁 uCompute Test Code (`testcode/`)
 
-<img width="786" height="692" alt="image" src="https://github.com/user-attachments/assets/e46d7301-c597-42f8-8892-3dcaa53bb9c0" />
+[Français]
+Ce répertoire contient l'ensemble des scripts de test et des démos pour valider chaque composant de la plateforme **RP2040 uCompute** (Buzzer, MicroSD, Écran, WiFi, etc.), ainsi que les fichiers sources de **uComputeOS**.
 
-## 2 versions, 
-### OLED 
-Fonctionne avec un SSD1306 et les boutons analogues du PCB
-### ST7789 
-f
-Fonctionne avec l'ecran IPS couleur 240x240 et les boutons analogues du PCB
+Pour les instructions d'installation complètes de **uComputeOS** (versions ST7789 LCD et SSD1306 OLED), veuillez vous référer à la section logicielle du **[README principal](../README.md)** à la racine du dépôt.
+
+---
+
+[English]
+This directory contains all the test scripts and demos to validate every component of the **RP2040 uCompute** platform (Buzzer, MicroSD, Screen, WiFi, etc.), as well as the source files for **uComputeOS**.
+
+For complete installation instructions for **uComputeOS** (ST7789 LCD and SSD1306 OLED versions), please refer to the software section in the **[Main README](../README.EN.md)** at the root of the repository.
+
