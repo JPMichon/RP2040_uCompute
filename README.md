@@ -1,4 +1,4 @@
-# 🚀 RP2040 uCompute
+# :computer: RP2040 uCompute
 
 ## [English version available here](./README.EN.md)
 
