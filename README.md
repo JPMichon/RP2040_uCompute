@@ -57,7 +57,7 @@ Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 m
 
 ## 🔌 Alimentation Alternative en 5v
 
-la façon la plus usuelle est d'alimenter le circuit via le connecteur USB.  Néanmoins, il est possible d'alimenté le circuit en **5v** a partir du de la **broche 1** du connecteur Neopixel ou VIA la **pin 1** du bornier d'extension. La Diode **D1** protège le port USB du retour du courant mais il est toujours préférable de couper l'alimentation **5v** si vous raccorder le circuit a un ordinateur. 
+La façon la plus usuelle est d'alimenter le circuit via le connecteur USB. Néanmoins, il est possible d'alimenter le circuit en **5V** à partir de la **broche 1** du connecteur Neopixel ou via la **pin 1** du bornier d'extension. La diode **D1** protège le port USB du retour de courant, mais il est toujours préférable de couper l'alimentation **5V** externe si vous raccordez le circuit à un ordinateur.
 
 > [!WARNING]
 > Le Vin absolu du régulateur AP2114H-3.3TRG1 est de 6.5v, Donc **Max 5.5v**.
