@@ -2,7 +2,7 @@
 
 Le **RP2040 uCompute** est une plateforme de développement embarquée, autonome et hautement modulaire basée sur le microcontrôleur **Raspberry Pi RP2040**. Conçue comme une solution matérielle tout-en-un, elle intègre un stockage étendu, des interfaces d'affichage polyvalentes ainsi qu'un écosystème de cartes filles interchangeables (Ethernet, WiFi, Radio, VGA), la rendant idéale pour les projets embarqués complexes, le prototypage réseau et l'apprentissage.
 
-La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) concu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
+La carte offre une double approche logicielle : elle peut être programmée et utilisée exactement comme un Raspberry Pi Pico classique, ou utiliser le GUI (uComputeOS) conçu pour cette plateforme. Ce mini-système d'exploitation écrit en MicroPython offre une interface graphique interactive pour explorer, copier et exécuter dynamiquement des scripts stockés dans la mémoire QFlash ou sur la carte Micro SD.
 
 <img width="778" height="350" alt="image" src="https://github.com/user-attachments/assets/68046cc3-ce54-43ec-a8df-1a742f71edf1" />
 
@@ -14,7 +14,7 @@ La carte offre une double approche logicielle : elle peut être programmée et u
 
 * **Microcontrôleur :** Raspberry Pi RP2040 cadencé à 125 MHz (horloge externe par quartz de 12 MHz).
 * **Dimensions du PCB :** 96 mm x 42 mm. Format compact allongé avec 4 trous de montage M3 aux quatre coins.
-* **Mémoire Flash QSPI :** Jusqu'à 16Mb en fonction du Module de memoire soudé en U2.
+* **Mémoire Flash QSPI :** Jusqu'à 16Mb en fonction du Module de mémoire soudé en U2.
 * **Stockage non volatile :** EEPROM I2C `CAT24Cxx` 
 * **Alimentation & Sécurité :** Connecteur USB-C moderne protégé par un fusible réarmable de 500 mA et des diodes anti-retour (`MBR120LSFT` et `1N5819`) pour sécuriser la double alimentation (USB + Neopixel).
 * **Interfaces utilisateur :** 
@@ -35,10 +35,10 @@ La carte a évolué pour moderniser sa connectique et offrir une flexibilité d'
 | :--- | :--- | :--- |
 | **Connecteur USB** | **Micro-USB** | **USB-C** |
 | **Option d'Affichage** | Écran LCD IPS ST7789 uniquement | **Double option :** ST7789 (SPI) ou OLED SSD1306 (I2C) |
-| **Bornier IOs (H1)** | 3V3 + 4 Digitals, 2 ADC + UART | **3V3, 5V + 6 Digitals, 2 ADC + UART** |
+| **Bornier IOs (H1)** | 3V3 + 4 Digital IO, 2 ADC + UART | **3V3, 5V + 6 Digital IO, 2 ADC + UART** |
 
 ### Focus sur l'évolution du bornier IOs (H1) :
-Le bornier H1 permet facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
+Le bornier H1 facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
 ### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
@@ -95,7 +95,7 @@ Le socket arrière double rangée et le connecteur d'affichage avant forment un 
 L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
 
 <img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
-* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiere un firmware special)
+* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)
 * **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.
 *  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
 * **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
@@ -120,9 +120,9 @@ Il y a en réalité **très peu de différences** fondamentales entre cette cart
 
 ### 📚 Ressources pour les débutants
 
-Puisque l'architecture est la même, vous pouvez utiliser à 100 % les guides, tutoriels et documentations officiels de la fondation Raspberry Pi pour apprendre à programmer votre RetroPico. 
+Puisque l'architecture est la même, vous pouvez utiliser à 100 % les guides, tutoriels et documentations officiels de la fondation Raspberry Pi pour apprendre à programmer votre **RP2040 uCompute**. 
 
-Pour faire vos premiers pas, nous vous recommandons vivement le guide officiel : <br>
+Pour faire vos premiers pas, je vous recommande vivement le guide officiel : <br>
 👉 **[Getting started with the Raspberry Pi Pico (Raspberry Pi Projects)](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)**
 
 Ce guide vous apprendra pas à pas à :
