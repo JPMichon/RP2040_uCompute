@@ -51,7 +51,7 @@ Le bornier H1 facilite le prototypage. l'espacement est standard a 2,54 mm ceci 
 
 ### Composition détaillée du bornier d'extension H1 (1x14 Broches) :
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
-2. **3.3V** (Régulée via l'AMS1117-3.3)
+2. **3.3V** (Régulée via l'AP2114H-3.3TRG1)
 3. **GND** (Masse commune)
 4. **UART 0** : `GP0` (TX) & `GP1` (RX)
 5. **2 Entrées Analogiques (ADC) :** `GP27` (ADC1) & `GP28` (ADC2)
