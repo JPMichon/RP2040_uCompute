@@ -49,7 +49,7 @@ La carte a évolué pour moderniser sa connectique et offrir une flexibilité d'
 ### Le bornier ( 1x14 pins Header):
 Le bornier (pins Header) facilite le prototypage. l'espacement est standard a 2,54 mm ceci permet de l'enficher dans un carte de prototypage (Protoboard) ou des cables de liaison (jumper wires) avec embouts *Dupont* afin de relier vos circuits ou modules.
 
-### les signaux:
+### Alimentations et signaux:
 1. **5V** (Alimentation directe issue de l'USB, idéale pour la puissance)
 2. **3.3V** (Régulée via l'AP2114H-3.3TRG1)
 3. **GND** (Masse commune)
