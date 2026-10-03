@@ -23,9 +23,9 @@ Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous
 
 * **Microcontrôleur :** Raspberry Pi RP2040 cadencé à 125 MHz (horloge externe par quartz de 12 MHz).
 * **Dimensions du PCB :** 96 mm x 42 mm. Format compact allongé avec 4 trous de montage M3 aux quatre coins.
-* **Mémoire Flash QSPI :** Jusqu'à 16Mb en fonction du Module de mémoire soudé en U2.
+* **Mémoire Flash QSPI :** (2meg - 16meg) en fonction de la puce.
 * **Stockage non volatile :** EEPROM I2C `CAT24Cxx` 
-* **Alimentation & Sécurité :** Connecteur USB-C moderne protégé par un fusible réarmable de 500 mA et des diodes anti-retour (`MBR120LSFT` et `1N5819`) pour sécuriser la double alimentation (USB + Neopixel).
+* **Alimentation:** USB-C et Fusible PTC (500ma)
 * **Interfaces utilisateur :** 
   * 3 boutons-poussoirs utilisateurs (BTN1, BTN2, BTN3).
   * Boutons système dédiés `RESET` et `BOOT` (format glissière profilé).
