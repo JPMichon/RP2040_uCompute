@@ -2,7 +2,7 @@
 
 ## 🔌 Extension Modules Ecosystem (Add-ons)
 
-The dual-row rear socket and the front display connector form a standardized expansion port, allowing you to adapt the hardware to your specific application. The mechanical and electrical footprint is compatible with several interchangeable technologies based on the Ethernet W5500 module pinout.
+The dual-row rear socket and the front display connector form a standardized expansion port, allowing you to adapt the hardware to your specific application. The mechanical and electrical footprint is compatible with several interchangeable technologies based on the Ethernet W5500 module **(pinout)**.
 
 > [!NOTE]
 > **uCompute Family Module Compatibility:** All of these extension modules are **100% compatible** with both the RP2040 uCompute board (any version) and the new RP2350 uCompute2. You can swap your network, radio, or display modules from one platform to another without any hardware modifications.
@@ -18,7 +18,7 @@ The dual-row rear socket and the front display connector form a standardized exp
 
 ## 🔌 Écosystème de Modules d'Extension (Add-ons)
 
-Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée. L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables basées sur le brochage (pinout) du module Ethernet W5500.
+Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée. L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables basées sur le brochage **(pinout)** du module Ethernet W5500.
 
 > [!NOTE]
 > **Compatibilité des modules de la famille uCompute :** L'intégralité de ces modules d'extension est **100 % compatible** aussi bien avec la carte **RP2040 uCompute** que la version **RP2350 uCompute2**.
