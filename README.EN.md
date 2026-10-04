@@ -10,6 +10,16 @@ The board offers a dual software approach: it can be programmed and used exactly
 
 ---
 
+## 🛠️ Manufacturing & Assembly (Do It Yourself)
+
+This project is licensed under **CC BY-NC-SA 4.0**. **Gerber** files as well as the Bill of Materials (BOM) are available in the `Hardware/` directory. You are free to have the PCBs manufactured by the supplier of your choice.
+
+⚠️ **Technical Level Required:** Manually assembling the original PCB requires **prior experience with SMD (surface-mount device) soldering**. The main microcontroller ideally requires the use of a hot air rework station or a heating plate.
+
+💡 **Prototyping Alternative:** If you do not wish to solder surface-mount components, please note that using the provided electrical schematics, it is entirely possible to build a functional prototype using a **breadboard** or **protoboard**. You can simply use a standard Raspberry Pi Pico (RP2040) or Pico 2 (RP2350) module and wire the components (screen, SD reader, etc.) to the corresponding logical GPIOs.
+
+---
+
 # 🤖 Assistants de Codage IA
 
 Si vous utilisez un agent IA (comme ChatGPT, Claude ou GitHub Copilot) pour vous aider à développer sur la RP2040 uCompute, configurez-le instantanément en lui copiant-collant l'un de nos profils personnalisés. L'IA connaîtra immédiatement toutes les définitions de broches et les adresses exactes de la carte pour coder sans faire d'erreurs matérielles !
