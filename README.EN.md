@@ -186,4 +186,4 @@ Check the [LICENSE](LICENSE) file to read the full terms.
 
 ## ☕ Support the Project
 
-If you appreciate my work and would like to buy me a coffee to support my future soldering and coding projects on a voluntary basis, you can leave me a tip on Ko-fi. It is entirely optional and greatly appreciated!
+If you appreciate my work and would like to buy me a coffee to support my future soldering and coding projects on a voluntary basis, you can leave me a [**tip on Ko-fi** ](https://ko-fi.com/jpmichon). It is entirely optional and greatly appreciated!
