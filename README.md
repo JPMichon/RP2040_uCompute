@@ -111,12 +111,12 @@ Voici l'attribution logicielle exacte des broches du RP2040 définie pour la pla
 Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée.
 
 ### 1. Modules de Communication (Socket Arrière)
-L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :
-
+L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :<br>
+* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)<br>
+_• Disponible dans le commerce auprès de nombreux revendeurs._ <br>
 <img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
-* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)
-* **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.
-*  <img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
+* **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.<br>
+<img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
 * **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
 <img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
 
