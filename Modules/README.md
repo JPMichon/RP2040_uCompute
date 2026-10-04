@@ -3,7 +3,7 @@
 Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée. L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables basées sur le brochage (pinout) du module Ethernet W5500.
 
 > [!NOTE]
-> **Compatibilité des modules de la famille uCompute :** L'intégralité de ces modules d'extension est **100 % compatible** aussi bien avec la carte RP2040 uCompute (à partir de la révision 1.3) qu'avec la version RP2350 uCompute2.
+> **Compatibilité des modules de la famille uCompute :** L'intégralité de ces modules d'extension est **100 % compatible** aussi bien avec la carte **RP2040 uCompute** que la version **RP2350 uCompute2**.
 > Vous pouvez interchanger vos modules réseau, radio ou d'affichage d'une plateforme à l'autre sans aucune modification matérielle.
 
 <br><br>
