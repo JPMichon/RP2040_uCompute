@@ -183,6 +183,36 @@ Au prochain redémarrage ou cycle d'alimentation, le micrologiciel MicroPython c
 
 ---
 
+## 🎯 Le projet idéal pour vous lancer
+
+Vous rêvez de construire votre propre plateforme de robotique avancée, mais vous ne savez pas par où commencer ? Vous avez peur de manquer de temps, de connaissances en programmation ou d'expertise en électronique ? Vous craignez de vous perdre dans un fouillis de câbles qui se débranchent tout le temps, ou de bloquer vos élèves avec du code trop complexe ?
+
+Le **uCompute Rover** a été créé précisément pour en finir avec ces frustrations.
+
+### 🧠 Pas besoin d'être un expert pour débuter
+* **Zéro programmation complexe :** Oubliez le C++ austère. Le robot est propulsé par le microcontrôleur RP2040 et se programme en **MicroPython**. C'est le langage le plus simple, le plus lisible et le plus rapide à apprendre aujourd'hui. En quelques lignes de code, votre robot avance.
+* **Zéro blocage frustrant :** Grâce au système visuel intégré (*uComputeOS*), si vous ou l'un de vos élèves faites une erreur dans le code, l'écran affiche une alerte claire au lieu de faire planter complètement la carte. Vous comprenez l'erreur instantanément sans perdre de temps.
+
+### 🛠️ Zéro soudure si vous le souhaitez !
+* Vous pensez ne pas avoir le niveau pour souder de minuscules composants électroniques (CMS) ? Aucun problème. Bien que la carte finale soit ultra-propre, le projet est conçu pour être **100 % reproductible sur une simple plaque de prototypage (*Breadboard*)** avec un Raspberry Pi Pico ou Pico 2 classique à bas coût. C'est la solution idéale pour débuter rapidement à la maison ou équiper toute une classe avec un budget maîtrisé.
+
+### 🚀 Une évolution sans limites, à votre rythme
+Ne restez pas bloqué avec un robot jouet figé. Commencez par un châssis basique télécommandé en ligne droite, puis faites-le évoluer quand vous aurez le temps : ajoutez le Wi-Fi pour le piloter depuis votre smartphone, connectez un module radio longue portée, ou installez un GPS et un capteur de distance pour le rendre totalement autonome.
+
+### 🛠️ Pour les Makers : Le bac à sable ultime
+* **Modularité totale :** Finis les robots figés ou les amas de câbles *Dupont* instables. Grâce à son système de cartes filles interchangeables, faites évoluer votre rover au gré de vos envies : ajoutez le Wi-Fi (ESP-12F), la radio (NRF24L01+), le LoRa, un GPS ou de l'imagerie thermique sans jamais refaire le circuit principal.
+* **Architecture ouverte :** Explorez des protocoles industriels et de communication standardisés (I2C, SPI, UART, PWM) sur une plateforme robuste et gratifiante.
+
+### 🎓 Pour les Écoles & Projets Éducatifs : Une pédagogie sans friction
+* **Barrière à l'entrée minimale :** Propulsé par le microcontrôleur RP2040 et les technologies d'uCompute, le rover permet aux étudiants de comprendre et d'obtenir des résultats concrets en seulement quelques lignes de code, bien plus rapidement qu'en C++.
+* **Sécurité et tolérance aux erreurs :** Grâce à l'interface de diagnostic intégrée (*uComputeOS*), si le code d'un élève contient une erreur, la carte capture l'exception et affiche un écran d'alerte visuel au lieu de figer le robot. L'apprentissage se fait par expérimentation fluide, sans frustration.
+* **Accessible à tous les budgets :** Si l'assemblage CMS d'origine demande de l'expertise, la plateforme est **100 % rétrocompatible sur plaque de prototypage (*Breadboard*)** avec un Raspberry Pi Pico ou Pico 2 standard. Vous pouvez équiper une classe entière à moindre coût !
+
+*Le uCompute Rover vous fournit une base mécanique et électronique solide. Vous n'avez plus qu'à assembler les blocs, à votre rythme et selon vos compétences actuelles.*
+
+---
+
+
 ## 📜 Licence
 
 Le matériel (fichiers de conception, schémas, typons) et les logiciels de ce projet sont mis à disposition selon les termes de la Licence **Creative Commons Attribution - Pas d'Utilisation Commerciale - Partage dans les Mêmes Conditions 4.0 International (CC BY-NC-SA 4.0)**.
