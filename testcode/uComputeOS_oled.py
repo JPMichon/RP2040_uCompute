@@ -25,7 +25,6 @@ _SPI1_MISO = 12 # SPI1_shared MISO
 _Led_System = 25 # définition du port  del systeme (GP25)
 _I2C_SDA = 20 # définition de Data du I2C(0) (GP20)
 _I2C_SCL = 21 # définition de SCL du I2C(0) (GP21)
-_Buzzer = 11 # définition du  buzzer (GP11)
 _Boutons = 26 # définition du port analogue des boutons (GP26)
 
 
