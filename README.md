@@ -102,7 +102,7 @@ Voici l'attribution logicielle exacte des broches du RP2040 définie pour la pla
 | **Bus SPI 1 (Partagé)** | `GP14` (SCK) / `GP15` (MOSI) / `GP12` (MISO) | Bus de données pour carte SD et port d'extension |
 | **Carte Micro SD** | `GP13` (CS) / `GP7` (Detect) | Sélection SPI et détection matérielle de la carte |
 | **Port d'Extension (Arrière)** | `GP8` (CS) / `GP10` (Reset) / `GP9` (INT) | Broches de contrôle dédiées aux modules de communication |
-| **Header Prototypage (Bas)** | `GP16, 17, 18, 19, 22, 24, 27, 28` | Broches d'extension générales (GPIO / ADC1 / ADC2) |
+| **Header Prototypage (Bas)** | `GP16, GP17, GP18, GP19, GP22, GP24, GP27, GP28, GP1, GP0` | Broches d'extension générales (GPIO / ADC1 / ADC2) |
 
 ---
 
