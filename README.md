@@ -11,6 +11,13 @@ La carte offre une double approche logicielle : elle peut être programmée et u
 
 ---
 
+## 🌐 Documentation centralisée (en anglais)<br>
+
+👉 [**uCompute Ecosystem Wiki**](https://github.com/JPMichon/uCompute-Ecosystem/wiki) — Hardware specifications, OS guides, and project overview.
+
+---
+
+
 ## 🛠️ Fabrication & Assemblage (Do It Yourself)
 
 Ce projet est sous licence **CC BY-NC-SA 4.0**. Les fichiers **Gerber** ainsi que la liste des composants (BOM) sont disponibles dans le dossier `Hardware/`. Vous pouvez librement faire fabriquer les PCBs chez le fournisseur de votre choix.
