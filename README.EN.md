@@ -10,6 +10,12 @@ The board offers a dual software approach: it can be programmed and used exactly
 
 ---
 
+## 🌐 Central Documentation<br>
+
+👉 [**uCompute Ecosystem Wiki**](https://github.com/JPMichon/uCompute-Ecosystem/wiki) — Hardware specifications, OS guides, and project overview.
+
+---
+
 ## 🛠️ Manufacturing & Assembly (Do It Yourself)
 
 This project is licensed under **CC BY-NC-SA 4.0**. **Gerber** files as well as the Bill of Materials (BOM) are available in the `Hardware/` directory. You are free to have the PCBs manufactured by the supplier of your choice.
