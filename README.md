@@ -88,8 +88,7 @@ La façon la plus usuelle est d'alimenter le circuit via le connecteur USB. Néa
 > [!WARNING]
 > Le Vin absolu du régulateur AP2114H-3.3TRG1 est de 6.5v, Donc **Max 5.5v**.
 
-<img width="571" height="271" alt="image" src="https://github.com/user-attachments/assets/c3ac5b20-0def-4023-9256-9ab2067576d6" />
-
+<img width="317" height="207" alt="image" src="https://github.com/user-attachments/assets/b69162d2-e9b0-4d42-b679-b8173f97237b" />
 
 ---
 
