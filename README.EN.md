@@ -110,18 +110,18 @@ Here is the exact software assignment of the RP2040 pins defined for the platfor
 
 The dual-row rear socket and the front display connector form a standardized expansion port, allowing the hardware to be tailored to the target application.
 
-### 1. Communication Modules (Rear Socket)
-The mechanical and electrical footprint is compatible with several interchangeable technologies:
+👉 **[Access the ecosystem modules repository (RP2040_uCompute Modules)](https://github.com/JPMichon/RP2040_uCompute/tree/main/Modules)**
 
-* **Ethernet Module (W5500):** Provides a stable wired network connectivity over SPI. (requires a special firmware)<br>
-_Commercially available from multiple third-party vendors._ <BR>
-<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
+| Location on Junior | Compatible Module | Description & Features | Hardware Render |
+| :--- | :--- | :--- | :--- |
+| **Add-On module** <br>(Communication) | **Wi-Fi Module** <br>(ESP-12F) | Adapter board embedding an ESP8266 to add full Wi-Fi connectivity. | <img width="100" height="133" alt="Module Wi-Fi ESP-12F" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /> |
+| **Add-On module** <br>(Communication) | **Radio Module** <br>(NRF24L01) | Adapter for 2.4 GHz radio links, ideal for bidirectional communication. | <img width="112" height="140" alt="Module Radio NRF24L01" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" /> |
+| **Add-On module** <br>(Communication) | **LoRa Module** <br>(RFM95W) | Long-range adapter exploiting LoRa radio technology. | <img width="112" height="130" alt="image" src="https://github.com/user-attachments/assets/9ad928aa-d1d1-4820-a41b-daa796c01034" /> |
+| **Header H1** <br>(I/O Connector) | **µCompute Remote** <br>| Extension board integrating an analog joystick and buttons for RC piloting. | <img width="175" height="131" alt="Manette uCompute Remote" src="https://github.com/user-attachments/assets/25dda003-8ab8-48c4-a7d1-1a45fdbca7a4" /> |
+| **Header H1** <br>(I/O Connector) | **µCompute Rover** <br> | Controller for DC motors (2+2), servo motor, HC-SR04 sensor, and Neo-6M GPS module. | <img width="220" height="145" alt="Contrôleur uCompute Rover" src="https://github.com/user-attachments/assets/90114819-d70b-4cbb-8cfd-5e95b66cca84" /> |
 
-* **WiFi Module (ESP-12F):** Adapter board embedding an ESP8266 module to add Wi-Fi connectivity.<br>
-<img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
-
-* **Radio Module (NRF24L01 - GT-24 Mini.MK1):** Adapter equipped with a 2x4-pin female connector for low-power, point-to-point radio communications (2.4 GHz).<br>
-<img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+> ℹ **Technical note regarding network support (W5500 Module):**
+> Although the **U7** add-on socket is natively designed to accommodate a **W5500** Ethernet module, using this wired connectivity under MicroPython requires special software attention. Unlike standard scripts, activating the W5500 network features **requires a custom recompilation of the MicroPython firmware** to directly integrate the network stack drivers (C drivers) required by this component.
 
 ---
 
