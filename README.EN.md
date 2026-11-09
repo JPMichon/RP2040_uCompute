@@ -82,7 +82,7 @@ The most common way to power the circuit is via the USB connector. However, it i
 > [!WARNING]
 > The absolute Vin of the AP2114H-3.3TRG1 regulator is 6.5V, so **Max 5.5V**.
 > 
-<img width="571" height="271" alt="image" src="https://github.com/user-attachments/assets/c3ac5b20-0def-4023-9256-9ab2067576d6" />
+<img width="317" height="207" alt="image" src="https://github.com/user-attachments/assets/b69162d2-e9b0-4d42-b679-b8173f97237b" />
 
 ---
 
