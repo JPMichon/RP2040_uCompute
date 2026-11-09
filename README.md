@@ -117,16 +117,18 @@ Voici l'attribution logicielle exacte des broches du RP2040 définie pour la pla
 
 Le socket arrière double rangée et le connecteur d'affichage avant forment un port d'extension standardisé permettant d'adapter le matériel à l'application visée.
 
-### 1. Modules de Communication (Socket Arrière)
-L'empreinte mécanique et électrique est compatible avec plusieurs technologies interchangeables :<br>
-* **Module Ethernet (W5500) :** Apporte une connectivité réseau filaire stable en SPI. (requiert un firmware spécial)<br>
-_• Disponible dans le commerce auprès de nombreux revendeurs._ <br>
-<img width="221" height="288" alt="image" src="https://github.com/user-attachments/assets/b017c095-deda-49ad-ae25-3661ce4e3009" /><br>
-* **Module WiFi (ESP-12F) :** Carte d'adaptation embarquant un module ESP8266 pour ajouter une connectivité Wi-Fi.<br>
-<img width="203" height="266" alt="image" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /><br>
-* **Module Radio (NRF24L01 - GT-24 Mini.MK1) :** Adaptateur doté d'un connecteur 2x4 broches femelle pour liaisons radio point à point (2.4 GHz) à basse consommation.<br>
-<img width="226" height="277" alt="image" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" />
+👉 **[Accéder au répertoire des modules de l'écosystème (RP2040_uCompute Modules)](https://github.com/JPMichon/RP2040_uCompute/tree/main/Modules)**
 
+| Emplacement sur le Junior | Module compatible | Description & Fonctionnalités | Rendu Matériel |
+| :--- | :--- | :--- | :--- |
+| **Add-On module** <br>(Communication) | **Module Wi-Fi** <br>(ESP-12F) | Carte d'adaptation embarquant un ESP8266 pour ajouter une connectivité Wi-Fi complète. | <img width="100" height="133" alt="Module Wi-Fi ESP-12F" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /> |
+| **Add-On module** <br>(Communication) | **Module Radio** <br>(NRF24L01) | Adaptateur pour liaisons radio 2,4 GHz, idéal pour la communication bidirectionnelle. | <img width="112" height="140" alt="Module Radio NRF24L01" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" /> |
+| **Add-On module** <br>(Communication) | **Module LoRa** <br>(RFM95W) | Adaptateur longue portée exploitant la technologie radio LoRa. | <img width="112" height="130" alt="image" src="https://github.com/user-attachments/assets/3cc3258a-87b2-431f-8dd4-5c8f17f6842f" /> |
+| **Header H1** <br>(Connecteur E/S) | **µCompute Remote** <br>| Carte d'extension intégrant un joystick analogique et des boutons pour le pilotage RC. | <img width="175" height="131" alt="Manette uCompute Remote" src="https://github.com/user-attachments/assets/25dda003-8ab8-48c4-a7d1-1a45fdbca7a4" /> |
+| **Header H1** <br>(Connecteur E/S) | **µCompute Rover** <br> | Contrôleur pour moteurs CC (2+2), servomoteur, capteur HC-SR04 et module GPS Neo-6M. | <img width="220" height="145" alt="Contrôleur uCompute Rover" src="https://github.com/user-attachments/assets/90114819-d70b-4cbb-8cfd-5e95b66cca84" /> |
+
+> ℹ **Note technique concernant le support réseau (Module W5500) :**
+> Bien que le connecteur d'add-on **U7** soit nativement conçu pour accueillir un module Ethernet **W5500**, l'utilisation de cette connectivité filaire sous MicroPython requiert une attention logicielle particulière. Contrairement aux scripts standards, l'activation des fonctionnalités réseau du W5500 **nécessite une recompilation personnalisée du firmware MicroPython** afin d'y intégrer directement les pilotes de pile réseau (*drivers C*) requis par ce composant.
 ---
 
 ### 2. Module d'Affichage & Vidéo (Socket Avant)
