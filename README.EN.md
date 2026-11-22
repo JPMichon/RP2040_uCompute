@@ -112,7 +112,7 @@ The dual-row rear socket and the front display connector form a standardized exp
 
 👉 **[Access the ecosystem modules repository (RP2040_uCompute Modules)](https://github.com/JPMichon/RP2040_uCompute/tree/main/Modules)**
 
-| Location on Junior | Compatible Module | Description & Features | Hardware Render |
+| Location | Compatible Module | Description & Features | Hardware Render |
 | :--- | :--- | :--- | :--- |
 | **Add-On module** <br>(Communication) | **Wi-Fi Module** <br>(ESP-12F) | Adapter board embedding an ESP8266 to add full Wi-Fi connectivity. | <img width="100" height="133" alt="Module Wi-Fi ESP-12F" src="https://github.com/user-attachments/assets/f0c80621-1b07-46e6-844b-4594e3d338f9" /> |
 | **Add-On module** <br>(Communication) | **Radio Module** <br>(NRF24L01) | Adapter for 2.4 GHz radio links, ideal for bidirectional communication. | <img width="112" height="140" alt="Module Radio NRF24L01" src="https://github.com/user-attachments/assets/a6a0a83b-80ed-4dbc-bc28-06579f64b54c" /> |
